@@ -42,14 +42,14 @@
               "addon": "openai_llm2_python",
               "extension_group": "chatgpt",
               "property": {
-                "base_url": "https://api.openai.com/v1",
-                "api_key": "${env:OPENAI_API_KEY}",
+                "base_url": "https://api.siliconflow.cn/v1",
+                "api_key": "${env:DEEPSEEK_API_KEY}",
                 "frequency_penalty": 0.9,
-                "model": "${env:OPENAI_MODEL}",
-                "max_tokens": 512,
+                "model": "deepseek-ai/DeepSeek-V3.2-Exp",
+                "max_tokens": 64,
                 "prompt": "",
-                "proxy_url": "${env:OPENAI_PROXY_URL|}",
-                "greeting": "TEN Agent connected. How can I help you today?",
+                "proxy_url": "",
+                "greeting": "TEN Agent connected. How can I help you today1?",
                 "max_memory_length": 10
               }
             },
@@ -87,11 +87,11 @@
             },
             {
               "type": "extension",
-              "name": "weatherapi_tool_python",
-              "addon": "weatherapi_tool_python",
+              "name": "queritsearch_tool_python",
+              "addon": "queritsearch_tool_python",
               "extension_group": "default",
               "property": {
-                "api_key": "${env:WEATHERAPI_API_KEY|}"
+                "api_key": "${env:QUERIT_API_KEY}"
               }
             },
             {
@@ -122,7 +122,7 @@
                   ],
                   "source": [
                     {
-                      "extension": "weatherapi_tool_python"
+                      "extension": "queritsearch_tool_python"
                     }
                   ]
                 }
